@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Plant Shop</title>
     <link rel="stylesheet" href="style.css" />
+    <title>The Plant Shop</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+    src="https://kit.fontawesome.com/8eabf54aad.js"
+    crossorigin="anonymous"
+  ></script>
   </head>
   <body>
     <nav>
@@ -27,17 +31,217 @@
         <div class="line3"></div>
       </div>
     </nav>
-    <div class="page">
-      <div class="video-div">
-        <div class="quote">
-          Some look for a beautiful place, others make a place beautiful...
-        </div>
-        <div class="video-overlay">The Plant Shop</div>
-        <video autoplay muted loop class="video">
-          <source src="plant.mp4" type="video/mp4" />
+    <!-- Header -->
+    <header id="showcase" class="grid">
+      <div class="video">
+        <video autoplay muted loop>
+          <source src="./assets/plant.mp4" type="video/mp4" />
         </video>
       </div>
-    </div>
+      <div class="content-wrap">
+        <!-- <h1>The Plant Shop</h1> -->
+        <p class="quote">
+          Some look for a beautiful place, others make a place beautiful...
+        </p>
+        <a href="#section-b" class="btn">Shop</a>
+      </div>
+    </header>
+
+    <!-- Main Area -->
+    <main id="main">
+      <!-- Section A -->
+      <section id="section-a">
+        <div class="content-wrap">
+          <h2 class="content-title">About Us</h2>
+          <div class="content-text">
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Unde nihil molestias quibusdam distinctio architecto! 
+               Rem eum quis impedit dignissimos, cum veritatis eaque sit 
+               perspiciatis, fugit commodi totam. Consequuntur sapiente dolorem 
+               temporibus eum, voluptatum assumenda saepe beatae molestias sunt 
+               quo dignissimos dolores hic perspiciatis in reprehenderit illum 
+               quos odit sit. Corporis atque excepturi asperiores suscipit quam 
+               esse maiores velit ea, quos nemo laboriosam maxime inventore 
+               libero aut quo neque doloremque praesentium doloribus possimus 
+               dolores, reprehenderit ducimus? Voluptatem est, ex cupiditate 
+               magnam eaque quia consequuntur dolores accusamus quam repellendus 
+               eveniet aspernatur accusantium nemo quo incidunt deserunt rem 
+               optio iusto facere? Labore, nostrum.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section B -->
+      <section id="section-b" class="grid">
+        <ul>
+          <li>
+            <div class="card">
+              <img src="./assets/ficusbelize.jpg" alt="Ficus Belize" />
+              <div class="card-content">
+                <h3 class="card-title">Ficus Belize</h3>
+                <p>
+                  <!-- The Ficus Elastica Belize is a true stunner! It boasts green,
+                  pink and creamy white leaves and is part of the fig family. It
+                  is easy to care for and air purifying - a wise choice for
+                  beginners. -->
+                  <p class="size">Pot Size: 12cm</p>
+                  <p class="price">£9.50
+                    <select name="quantity" id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                  </p>
+                  <button class="buy-btn">Add to cart</button>
+                
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <img src="./assets/soh.jpg" alt="String of Hearts" />
+              <div class="card-content">
+                <h3 class="card-title">Ceropegia Wooddii</h3>
+                <p>
+                  <!-- The String of Hearts is a hardy houseplant with very pretty heart shaped foliage,
+                  hence the name! This is a vine type plant which grows long,
+                  wispy trails. Native to South Africa, Swaziland and Zimbabwe.
+                  A low maintenance houseplant that is good for new plant
+                  parents. -->
+                  <p class="size">Pot Size: 12cm</p>
+                  <p class="price">£9.50
+                    <select name="quantity" id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                  </p>
+                  <button class="buy-btn">Add to cart</button>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <img src="./assets/snake.jpg" alt="String of Hearts" />
+              <div class="card-content">
+                <h3 class="card-title">Sansevieria Zeylanica</h3>
+                <p>
+                    <!-- The Sanseveria aka Snake Plant or Mother In Law Tongue. 
+                        Suits a place with indirect light. Water deeply, never allow 
+                        the soil to remain soggy, purifies the air. -->
+                  <p class="size">Pot Size: 17cm</p>
+                  <p class="price">£18.50
+                    <select name="quantity" id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                  </p>
+                  <button class="buy-btn">Add to cart</button>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <img src="./assets/vmonsterapot.jpg" alt="Variegated Monstera" />
+              <div class="card-content">
+                <h3 class="card-title">Monstera Deliciosa</h3>
+                <p>
+                  <!-- Vanishingly rare & unequivocally unique, the Variegated
+                  Monstera demands the title of "Crowning Jewel" in even the
+                  most prestigious of houseplant collections. -->
+                  <p class="size">Pot Size: 22cm</p>
+                  <p class="price">£65.00
+                    <select name="quantity" id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                  </p>
+                  <button class="buy-btn">Add to cart</button>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section C -->
+      <section id="section-c" class="grid">
+        <div class="content-wrap">
+          <h2 class="content-title">The Plant Shop Blog</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum in
+            perspiciatis ad commodi! Earum, voluptatibus at. Aspernatur neque
+            nobis sint beatae similique ad laborum est ducimus assumenda
+            accusamus officia, explicabo alias, ut voluptatibus id ipsa
+            delectus, dolor eligendi consequuntur?
+          </p>
+        </div>
+      </section>
+      <!-- Section D -->
+      <section id="section-d" class="grid">
+        <div class="box">
+          <h2 class="content-title">Contact</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            magnam, fuga ipsa recusandae dolorum quam harum ratione minima
+            molestiae animi?
+          </p>
+          <p>theplantshop@test.com</p>
+        </div>
+        <div class="box">
+          <h2 class="content-title">Reviews</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea saepe
+            dolorem minima harum accusamus repellat vel cumque consequatur
+            rerum? Similique.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="main-footer" class="grid">
+      <!-- <div>The Plant Shop</div>
+      <div>
+        Project By
+        <a href="https://twitter.com/hanwhocodes" target="_blank"
+          >hanWhoCodes
+        </a>
+      </div> -->
+        <div class="projectBy">
+          Project By:
+          <a href="https://twitter.com/hanwhocodes" target="_blank"
+            >hanWhoCodes
+          </a>
+        </div>
+        <div class="icons">
+          <h3>Connect</h3>
+          <a
+            href="https://www.facebook.com/thehummingbirdhostel/"
+            class="fa fa-facebook"
+          ></a>
+          <a href="https://twitter.com/hanwhocodes" class="fa fa-twitter"></a>
+          <a
+            href="https://www.linkedin.com/in/hannah-l/"
+            class="fa fa-linkedin"
+          ></a>
+        </div>
+    </footer>
+
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
