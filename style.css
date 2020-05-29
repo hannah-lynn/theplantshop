@@ -173,6 +173,11 @@ nav {
   box-shadow: 4px 6px 12px rgb(208, 84, 105);
 }
 
+.card-title {
+  font-size: 1.3em;
+  text-shadow: 2px 2px rgb(208, 84, 105);
+}
+
 .buy-btn {
   font-family: 'Dosis', sans-serif;
   background: antiquewhite;
