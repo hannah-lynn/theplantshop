@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Dosis', sans-serif;
   background: antiquewhite;
   color: rgb(28, 99, 28);
@@ -24,7 +25,7 @@ h3 {
 
 p {
   margin: 0;
-  padding: 1em 0;
+  padding: 0.5em 0;
 }
 
 .btn {
@@ -34,7 +35,7 @@ p {
   text-decoration: none;
   padding: 0.2em 1.3em;
   border: 1px solid rgb(28, 99, 28);
-  margin: 0.2em 0;
+  margin: 0.8em 0;
   border-radius: 10%;
 }
 
@@ -46,15 +47,16 @@ p {
 /* Nav */
 
 nav {
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  top: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  max-height: 10vh;
   background-color: antiquewhite;
   color: rgb(45, 99, 45);
-  /* 
-  z-index: 1; */
+  z-index: 1;
 }
 
 .logo {
@@ -93,54 +95,30 @@ nav {
   transition: all 0.5s ease;
 }
 
-.nav-active {
-  transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2 {
-  opacity: 0;
-}
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
 /* Header */
 
 #showcase {
-  min-height: 450px;
+  min-height: 500px;
   color: antiquewhite;
   text-align: center;
+  position: relative;
 }
 
 #showcase video {
   position: absolute;
   top: 0px;
   left: 0px;
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   width: 100%;
-  height: 450px;
+  height: 100vh;
   z-index: -1;
   opacity: 0.8;
 }
 
 #showcase p {
-  padding-top: 100px;
+  padding-top: 250px;
   font-style: italic;
 }
 
@@ -160,7 +138,7 @@ nav {
 /* Section B */
 
 #section-b {
-  padding: 2em 1em 1em;
+  padding: 1em 1em 1em;
 }
 
 #section-b ul {
@@ -170,9 +148,15 @@ nav {
 }
 
 #section-b li {
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   background: rgb(28, 99, 28, 0.7);
   color: antiquewhite;
+  border-radius: 5px;
+}
+
+.card img {
+  height: 35%;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .card-content {
@@ -181,6 +165,12 @@ nav {
 
 .card {
   box-shadow: 0 4px 8px 0 grey;
+  border-radius: 5px;
+}
+
+.card-list:hover {
+  transform: scale(1.09);
+  box-shadow: 4px 6px 12px rgb(208, 84, 105);
 }
 
 .buy-btn {
@@ -188,10 +178,15 @@ nav {
   background: antiquewhite;
   font-size: 1em;
   padding: 0.3em 0.4em;
+  margin-top: 3px;
   border-radius: 12px;
   border: none;
   text-decoration: none;
   cursor: pointer;
+}
+
+.buy-btn:hover {
+  transform: scale(1.4);
 }
 
 button:focus {
@@ -199,7 +194,7 @@ button:focus {
 }
 
 .buy-btn:hover {
-  background: rgb(208, 84, 105);
+  background: rgb(208, 84, 105, 0.5);
 }
 
 #quantity {
@@ -227,6 +222,18 @@ button:focus {
 
 #section-d .box:first-child {
   background: rgb(55, 114, 55);
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+
+  width: 300px;
+  height: 300px;
 }
 
 /* Footer */
@@ -306,6 +313,7 @@ span.fade {
   body {
     overflow-x: hidden;
   }
+
   .nav-links {
     position: absolute;
     right: 0px;
@@ -315,7 +323,7 @@ span.fade {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    width: 100%;
     transform: translate(100%);
     transition: transform 0.5s ease-in;
   }
@@ -325,4 +333,29 @@ span.fade {
   .burger {
     display: block;
   }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }

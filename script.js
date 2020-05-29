@@ -22,11 +22,7 @@ const navSlide = () => {
   });
 };
 
-const app = () => {
-  navSlide();
-};
-
-app();
+navSlide();
 
 const text = document.querySelector('.quote');
 const quote = text.textContent;
