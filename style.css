@@ -209,6 +209,25 @@ button:focus {
   padding: 0.4em 0.5em;
 }
 
+.overlay {
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  right: 0;
+  background: rgb(208, 84, 105);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  font-size: 1.2em;
+  transition: 0.5s ease;
+}
+
+.card-container:hover .overlay {
+  height: 51%;
+  padding-top: 20px;
+  opacity: 0.9;
+}
+
 /* Section C */
 
 #section-c {
